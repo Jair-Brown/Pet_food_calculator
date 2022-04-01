@@ -6,18 +6,18 @@ dog_weight = int(input("What is your dogs weight in lbs?"))
 
 
 getcontext().prec = 3
-food_total = float(Decimal(dog_weight * .03))
+food_total = round(float(Decimal(dog_weight * .03)), 2)
 
 print(str(food_total) + ' grams')
 
 food_comp = []
-muscle = (food_total * .7)
-edible_bone = (food_total * .1)
-liver = (food_total * .05)
-other_organs = (food_total * .05)
-veggies = (food_total * .07)
-seeds_nuts = (food_total * .01)
-fruits = (food_total * .01)
+muscle = round((food_total * .7), 2)
+edible_bone = round((food_total * .1), 2)
+liver = round((food_total * .05), 2)
+other_organs = round((food_total * .05), 2)
+veggies = round((food_total * .07), 2)
+seeds_nuts = round((food_total * .01), 2)
+fruits = round((food_total * .01), 2)
 food_comp.append(str(muscle) + ' grams' + ' of Muscle.')
 food_comp.append(str(edible_bone) + ' grams' + ' of edible bone.')
 food_comp.append(str(liver) + ' grams' + ' of liver.')
