@@ -1,8 +1,8 @@
 from decimal import Decimal
 from decimal import getcontext
 
-
-dog_weight = int(input("Dogs_weight in lbs?"))
+print("Hello, I see you would like to calculate a raw food diet for your fur baby today.")
+dog_weight = int(input("What is your dogs weight in lbs?"))
 
 
 getcontext().prec = 3
@@ -18,17 +18,16 @@ other_organs = (food_total * .05)
 veggies = (food_total * .07)
 seeds_nuts = (food_total * .01)
 fruits = (food_total * .01)
-food_comp.append("Muscle " + str(muscle) + ' grams')
-food_comp.append('Edible Bone ' + str(edible_bone) + ' grams')
-food_comp.append('Liver ' + str(liver) + ' grams')
-food_comp.append('Other Organs ' + str(other_organs) + ' grams')
-food_comp.append('Vegetables ' + str(veggies) + ' grams')
-food_comp.append('Seeds and Nuts ' + str(seeds_nuts) + ' grams')
-food_comp.append('Fruits ' + str(fruits) + ' grams')
+food_comp.append(str(muscle) + ' grams' + ' of Muscle.')
+food_comp.append(str(edible_bone) + ' grams' + ' of edible bone.')
+food_comp.append(str(liver) + ' grams' + ' of liver.')
+food_comp.append(str(other_organs) + ' grams'+ ' of other organs.')
+food_comp.append(str(veggies) + ' grams' + ' of vegetables.')
+food_comp.append(str(seeds_nuts) + ' grams' + ' seeds and nuts.')
+food_comp.append(str(fruits) + ' grams' + ' fruits')
 
-#print(food_comp)
+
 for item in food_comp:
-    print (item)
+    print ("Your dog needs " + item)
 
 
-#print('Hello, your canine companion needs '+ )
